@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="ikeepcalm">
+<Layout title="Bohdan Horokh">
     <main>
         <svg
                 class="astro-a"
@@ -28,14 +28,15 @@ import Card from '../components/Card.astro';
                         y2="622.479"
                         gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-opacity="0.9"></stop>
+                    <stop stop-opacity="0.9" offset="2"></stop>
                     <stop offset="1" stop-opacity="0.2"></stop>
                 </linearGradient>
             </defs>
         </svg>
         <h1>Hello! My name is <span class="text-gradient">ikeepcalm</span></h1>
         <p class="instructions">
-            - Backend Java developer with flaming passion for <strong> Minecraft </strong> servers,<br/>
+            - Backend <strong>Java</strong> developer with flaming passion for <strong> Minecraft </strong>
+            servers,<br/>
             - ...and acquired skills in <strong> HTML, CSS, JavaScript (meh), Astro (♥), SQL, and C#</strong>.<br/>
         </p>
         <ul role="list" class="link-card-grid">
@@ -64,6 +65,35 @@ import Card from '../components/Card.astro';
                     body="Come say hi! I'm always up for a chat."
             />
         </ul>
+
+        <h2 id="web-projects">Web Projects coincidentally hosted on the same domain:</h2>
+        <div class="list">
+            <ul>
+                <li><span> <a href="/web-lr-1">Web - Lr - 1</a> - Grid CSS layout</span></li>
+                <li><span><a href="/web-lr-2">Web - Lr - 2</a> - Grid CSS / Flexbox CSS / Plain layouts</span></li>
+                <li><span><a href="/web-lr-3">Web - Lr - 3</a> - E-mail layout / Phone adaptation</span></li>
+                <li><span><a href="/web-lr-4">Web - Lr - 4</a> - Web - Design implementation</span></li>
+                <li><span><a href="/web-lr-5">Web - Lr - 5</a> - Hello from JavaScript!</span></li>
+                <li><span> <a href="/web-lr-6">Web - Lr - 6</a> - Fullstack with Java backend</span></li>
+            </ul>
+        </div>
+
+        <h2 id="other-projects">Other Projects you may also be interested in</h2>
+        <div class="list">
+            <ul>
+                <li><span> <a href="https://github.com/ikeepcalm/kpi-op">KPI Programming Introduction</a> - C and Java works</span>
+                </li>
+                <li><span><a
+                        href="https://github.com/ikeepcalm/kpi-op2">KPI C# OOP</a> - C# works | EPAM AutoCode</span>
+                </li>
+                <li><span><a href="https://github.com/ikeepcalm/kpi-ads">KPI Algorithms Introduction</a> - Java Algorithms</span>
+                </li>
+            </ul>
+        </div>
+
+        <span>Other things tend to have private access, cannot be shared. Sorry!</span>
+        <span>Maybe they will be available in the future. For example, on SpigotMC, PolyMart or other platforms 🤭</span>
+
     </main>
 </Layout>
 
@@ -130,5 +160,63 @@ import Card from '../components/Card.astro';
         grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
         gap: 2rem;
         padding: 0;
+    }
+
+    .list {
+        position: relative;
+    }
+
+    .list h2 {
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .list ul {
+        position: relative;
+    }
+
+    .list ul li {
+        position: relative;
+        left: 0;
+        color: #fce4ec;
+        list-style: none;
+        margin: 4px 0;
+        border-left: 2px solid #f50057;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .list ul li:hover {
+        left: 10px;
+    }
+
+    .list ul li span {
+        position: relative;
+        padding: 8px;
+        padding-left: 12px;
+        display: inline-block;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .list ul li:hover span {
+        color: #111;
+    }
+
+    .list ul li:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #f50057;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 0.5s;
+    }
+
+    .list ul li:hover:before {
+        transform: scaleX(1);
     }
 </style>
