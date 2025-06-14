@@ -1,225 +1,1537 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+const javaCodeHtml = `
+<span class="code-annotation">@EnableAsync</span>
+<span class="code-annotation">@SpringBootApplication</span>
+<span class="code-keyword">public</span> <span class="code-keyword">class</span> <span class="code-class">UAProjectApplication</span> {
+    <span class="code-keyword">public</span> <span class="code-keyword">static</span> <span class="code-keyword">void</span> <span class="code-method">main</span>(<span class="code-class">String</span>[] args) {
+        <span class="code-class">SpringApplication</span>.<span class="code-method">run</span>(<span class="code-class">UAProjectApplication</span>.<span class="code-keyword">class</span>, args);
+    }
+}`;
 ---
 
-<Layout title="Bohdan Horokh">
+<Layout title="Bohdan Horokh - Java Developer & Technical Leader">
     <main>
-        <svg
-                class="astro-a"
-                width="495"
-                height="623"
-                viewBox="0 0 495 623"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-        >
-            <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-                    fill="url(#paint0_linear_1805_24383)"></path>
-            <defs>
-                <linearGradient
-                        id="paint0_linear_1805_24383"
-                        x1="247.358"
-                        y1="0"
-                        x2="247.358"
-                        y2="622.479"
-                        gradientUnits="userSpaceOnUse"
-                >
-                    <stop stop-opacity="0.9" offset="2"></stop>
-                    <stop offset="1" stop-opacity="0.2"></stop>
-                </linearGradient>
-            </defs>
-        </svg>
-        <h1>Hello! My name is <span class="text-gradient">ikeepcalm</span></h1>
-        <p class="instructions">
-            - Backend <strong>Java</strong> developer with flaming passion for <strong> Minecraft </strong>
-            servers,<br/>
-            - ...and acquired skills in <strong> HTML, CSS, JavaScript (meh), Astro (♥), SQL, and C#</strong>.<br/>
-        </p>
-        <ul role="list" class="link-card-grid">
-            <Card
-                    icon="github"
-                    href="https://github.com/ikeepcalm"
-                    title="GitHub"
-                    body="Check out my projects and contributions."
-            />
-            <Card
-                    icon="minecraft"
-                    href="https://www.uaproject.xyz"
-                    title="Minecraft Server"
-                    body="Did you know I run a Minecraft server? 🎮"
-            />
-            <Card
-                    icon="lumios"
-                    href="https://www.lumios.dev"
-                    title="Lumios Bot"
-                    body="Your the only study-life companion you need (Telegram Bot)."
-            />
-            <Card
-                    icon="telegram"
-                    href="https://t.me/ikeepcalm"
-                    title="Reach me out"
-                    body="Come say hi! I'm always up for a chat."
-            />
-        </ul>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="grid-overlay"></div>
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="hero-content animate-on-scroll">
+                    <div class="hero-badge">
+                        <span class="status-indicator"></span>
+                        Available for opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name text-gradient">Bohdan Horokh</span>
+                        <span class="title">Java Developer & Technical Leader</span>
+                    </h1>
+                    <p class="hero-description">
+                        Passionate full-stack developer specializing in <strong>Java Spring Framework</strong>,
+                        <strong>distributed systems</strong>, and <strong>Minecraft server architecture</strong>.
+                        Leading technical teams and building scalable platforms that serve thousands of users.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Users Served</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="2">
+                                <path d="M7 7h10v3l4-4-4-4v3H7z"/>
+                                <path d="M17 17H7v-3l-4 4 4 4v-3h10z"/>
+                            </svg>
+                            View My Work
+                        </a>
+                        <a href="/source/cv.pdf" class="btn btn-secondary" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual animate-on-scroll">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control close"></span>
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                            </div>
+                            <span class="window-title">UAProjectApplication.java</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code set:html={javaCodeHtml}></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h2 id="web-projects">Web Projects coincidentally hosted on the same domain:</h2>
-        <div class="list">
-            <ul>
-                <li><span> <a href="/web-lr-1" target="_blank">Web - Lr - 1</a> - Grid CSS layout</span></li>
-                <li><span><a href="/web-lr-2" target="_blank">Web - Lr - 2</a> - Grid CSS / Flexbox CSS / Plain layouts</span></li>
-                <li><span><a href="/web-lr-3" target="_blank">Web - Lr - 3</a> - E-mail layout / Phone adaptation</span></li>
-                <li><span><a href="/web-lr-4" target="_blank">Web - Lr - 4</a> - Web - Design implementation</span></li>
-                <li><span><a href="/web-lr-5" target="_blank">Web - Lr - 5</a> - Hello from JavaScript!</span></li>
-                <li><span> <a href="/web-lr-6" target="_blank">Web - Lr - 6</a> - Fullstack with Java backend</span></li>
-            </ul>
-        </div>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate developer with expertise in enterprise Java applications and
+                        innovative Minecraft server solutions</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text animate-on-scroll">
+                        <p>
+                            I'm a Computer Science student at <strong>National Technical University of Ukraine "Igor
+                            Sikorsky Kyiv Polytechnic Institute"</strong>
+                            and pursuing <strong>Computers and Information Technology</strong> at "The Lower Danube"
+                            University in Romania.
+                        </p>
+                        <p>
+                            Currently serving as <strong>Team Lead</strong> at UAProject, where I architect and maintain
+                            a complex
+                            distributed system serving thousands of Minecraft players. Our platform features custom Java
+                            plugins,
+                            FastAPI backend, Discord OAuth2 integration, and multi-server infrastructure with Velocity
+                            proxy.
+                        </p>
+                        <p>
+                            My expertise spans from <strong>Spring Framework</strong> enterprise applications to
+                            innovative
+                            <strong>Minecraft plugin development</strong>, with strong foundation in database design,
+                            system optimization, and containerized deployments.
+                        </p>
 
-        <h2 id="other-projects">Other Projects you may also be interested in</h2>
-        <div class="list">
-            <ul>
-                <li><span> <a href="https://github.com/ikeepcalm/kpi-programming-fundamentals" target="_blank">KPI Programming Introduction</a> - C and Java works</span>
-                </li>
-                <li><span><a
-                        href="https://github.com/ikeepcalm/kpi-object-oriented-programming" target="_blank">KPI C# OOP</a> - C# works | EPAM AutoCode</span>
-                </li>
-                <li><span><a href="https://github.com/ikeepcalm/kpi-algorithms-data-structures" target="_blank">KPI Algorithms Introduction</a> - Java Algorithms</span>
-                </li>
-                <li><span><a href="https://github.com/ikeepcalm/kpi-algorithms-design" target="_blank">KPI Algorithms Designing</a> - Java Algorithms</span>
-                </li>
-            </ul>
-        </div>
-        <span> KPI means "Kyiv Polytechnic Institute", university where I study programming. </span> <br/><br/>
+                    </div>
+                    <div class="about-image animate-on-scroll">
+                        <div class="image-container">
+                            <img src="/img/who-is-it.jpg" alt="Bohdan Horokh" />
+                            <div class="image-overlay">
+                                <div class="tech-stack">
+                                    <span class="tech">Java</span>
+                                    <span class="tech">Spring</span>
+                                    <span class="tech">Docker</span>
+                                    <span class="tech">PostgreSQL</span>
+                                    <span class="tech">RESTful API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="achievements">
+                    <div class="achievement">
+                        <div class="achievement-icon">🎓</div>
+                        <div>
+                            <h4>Education</h4>
+                            <p>CS at KPI Ukraine + IT at Lower Danube University Romania</p>
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement-icon">🏆</div>
+                        <div>
+                            <h4>Certifications</h4>
+                            <p>Java Developer, Design Patterns, Networking Essentials, Elements of AI</p>
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <div class="achievement-icon">🌍</div>
+                        <div>
+                            <h4>Languages</h4>
+                            <p>Ukrainian (Native), Russian (Native), English (Upper-Intermediate), Romanian
+                                (Intermediate)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <span>Other things tend to have private access, cannot be shared. Sorry!</span>
-        <span>Maybe they will be available in the future. For example, on SpigotMC, PolyMart or other platforms 🤭</span>
+        <!-- UAProject Architecture Section -->
+        <section id="uaproject" class="section bg-highlight">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">UAProject Architecture</h2>
+                    <p class="section-subtitle">Leading a complex distributed platform serving 100+ daily users</p>
+                </div>
+                <div class="architecture-overview animate-on-scroll">
+                    <div class="architecture-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">🚀</div>
+                            <div class="stat-info">
+                                <h3>Multi-Server Infrastructure</h3>
+                                <p>Velocity proxy managing main-heavy, lobby, and test servers</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⚡</div>
+                            <div class="stat-info">
+                                <h3>Async FastAPI Backend</h3>
+                                <p>SQLAlchemy ORM with Redis workers and webhook architecture</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🔐</div>
+                            <div class="stat-info">
+                                <h3>Discord OAuth2 Integration</h3>
+                                <p>Seamless authentication and community management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="architecture-diagram animate-on-scroll">
+                    <h3>System Architecture</h3>
+                    <div class="diagram">
+                        <div class="diagram-layer">
+                            <h4>Frontend Layer</h4>
+                            <div class="components">
+                                <div class="component">Next.js Website</div>
+                                <div class="component">Astro Docs</div>
+                                <div class="component">Discord Bot (Anaya)</div>
+                            </div>
+                        </div>
+                        <div class="diagram-arrow">↓</div>
+                        <div class="diagram-layer">
+                            <h4>API Layer</h4>
+                            <div class="components">
+                                <div class="component highlight">FastAPI Backend</div>
+                                <div class="component">REST API (/v2/docs)</div>
+                                <div class="component">Webhook System</div>
+                            </div>
+                        </div>
+                        <div class="diagram-arrow">↓</div>
+                        <div class="diagram-layer">
+                            <h4>Infrastructure Layer</h4>
+                            <div class="components">
+                                <div class="component">PostgreSQL Database</div>
+                                <div class="component">Redis Cache</div>
+                                <div class="component">ARQ Workers</div>
+                            </div>
+                        </div>
+                        <div class="diagram-arrow">↓</div>
+                        <div class="diagram-layer">
+                            <h4>Game Servers</h4>
+                            <div class="components">
+                                <div class="component">Velocity Proxy</div>
+                                <div class="component">Main Server (Purpur)</div>
+                                <div class="component">Custom Plugins</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="architecture-features animate-on-scroll">
+                    <h3>Key Technical Features</h3>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <h4>🔌 Custom Plugin Ecosystem</h4>
+                            <p>CatWalk (Backend Bridge), Graylist (Access Control), CircleOfImagination (Magic
+                                System)</p>
+                        </div>
+                        <div class="feature">
+                            <h4>💳 Payment Integration</h4>
+                            <p>Donatello.to integration with automated transaction processing and Discord
+                                notifications</p>
+                        </div>
+                        <div class="feature">
+                            <h4>🛡️ Security & Auth</h4>
+                            <p>Discord OAuth2, JWT tokens, verified action pathways, and graylist access control</p>
+                        </div>
+                        <div class="feature">
+                            <h4>📊 Real-time Events</h4>
+                            <p>Redis-powered webhook system for instant updates across all platform components</p>
+                        </div>
+                        <div class="feature">
+                            <h4>🐳 DevOps Pipeline</h4>
+                            <p>Docker containers, Portainer management, GitHub Actions CI/CD, and VPS deployment</p>
+                        </div>
+                        <div class="feature">
+                            <h4>📈 Scalable Architecture</h4>
+                            <p>Async processing, database optimization, caching strategies, and load balancing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Innovative solutions built with modern technologies</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="/img/uaproject.png" alt="UAProject" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://uaproject.xyz" target="_blank" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                             stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                            <polyline points="15,3 21,3 21,9"/>
+                                            <line x1="10" y1="14" x2="21" y2="3"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://github.com/mc-uaproject" target="_blank" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                             stroke="currentColor" stroke-width="2">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>UAProject</h3>
+                                <span class="project-status active">Team Lead</span>
+                            </div>
+                            <p>Complete Minecraft platform with custom plugins, FastAPI backend, Discord integration,
+                                and multi-server infrastructure serving 1000+ daily users.</p>
+                            <div class="project-tech">
+                                <span class="tech">Java</span>
+                                <span class="tech">Spring</span>
+                                <span class="tech">FastAPI</span>
+                                <span class="tech">PostgreSQL</span>
+                                <span class="tech">Redis</span>
+                                <span class="tech">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="/img/lumios.gif" alt="Lumios Bot" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://queue-ui.vercel.app/" target="_blank" class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                             stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                            <polyline points="15,3 21,3 21,9"/>
+                                            <line x1="10" y1="14" x2="21" y2="3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Lumios Bot</h3>
+                                <span class="project-status active">Backend Developer</span>
+                            </div>
+                            <p>Complete study-life assistant with Telegram bot integration, featuring powerful backend,
+                                ORM data management, and secure API endpoints.</p>
+                            <div class="project-tech">
+                                <span class="tech">Java</span>
+                                <span class="tech">Spring Boot</span>
+                                <span class="tech">Telegram API</span>
+                                <span class="tech">PostgreSQL</span>
+                                <span class="tech">RESTful API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="/img/kpi.webp" alt="KPI" />
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/ikeepcalm/kpi-programming-fundamentals" target="_blank"
+                                       class="project-link">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                             stroke="currentColor" stroke-width="2">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Academic Projects</h3>
+                                <span class="project-status">University Work</span>
+                            </div>
+                            <p>Collection of programming fundamentals, OOP concepts, algorithms, and data structures
+                                implementations in C, Java, and C#.</p>
+                            <div class="project-tech">
+                                <span class="tech">Java</span>
+                                <span class="tech">C#</span>
+                                <span class="tech">C</span>
+                                <span class="tech">HTML/CSS</span>
+                                <span class="tech">JS</span>
+                                <span class="tech">Algorithms</span>
+                                <span class="tech">Data Structures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-highlight">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Comprehensive expertise across the development stack</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category animate-on-scroll">
+                        <div class="skill-icon">☕</div>
+                        <h3>Backend Development</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Java & Spring Framework</span>
+                                <span class="skill-level expert">Advanced (2+ years)</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PostgreSQL & MariaDB</span>
+                                <span class="skill-level advanced">Advanced (2+ years)</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">RESTful APIs</span>
+                                <span class="skill-level expert">Advanced</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python & Machine Learning</span>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category animate-on-scroll">
+                        <div class="skill-icon">🎮</div>
+                        <h3>Minecraft Development</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Paper API & Plugins</span>
+                                <span class="skill-level expert">Expert (3+ years)</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Networking & Packets</span>
+                                <span class="skill-level advanced">Advanced (3+ years)</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Velocity Proxy</span>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Server Architecture</span>
+                                <span class="skill-level expert">Expert</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category animate-on-scroll">
+                        <div class="skill-icon">🛠️</div>
+                        <h3>DevOps & Tools</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Docker & Containers</span>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Linux Systems</span>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Git & CI/CD</span>
+                                <span class="skill-level advanced">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category animate-on-scroll">
+                        <div class="skill-icon">🌐</div>
+                        <h3>Frontend & Web</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">JavaFX</span>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS/JavaScript</span>
+                                <span class="skill-level intermediate">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Astro Framework</span>
+                                <span class="skill-level beginner">Beginner+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss opportunities or collaborate on exciting projects</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info animate-on-scroll">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in hearing about new opportunities, especially those involving
+                            innovative Java applications, distributed systems, or Minecraft development.</p>
+
+                        <div class="contact-methods">
+                            <a href="mailto:horokhbohdandmytrovich@gmail.com" class="contact-method">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                         stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>horokhbohdandmytrovich@gmail.com</p>
+                                </div>
+                            </a>
+
+                            <a href="https://t.me/ikeepcalm" target="_blank" class="contact-method">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                         stroke-width="2">
+                                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Telegram</h4>
+                                    <p>@ikeepcalm</p>
+                                </div>
+                            </a>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                         stroke-width="2">
+                                        <circle cx="12" cy="10" r="3"/>
+                                        <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Galați, Romania</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form animate-on-scroll" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="project">Project Collaboration</option>
+                                <option value="consultation">Technical Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                            </svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script>
+        document.querySelector('#contact-form')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+
+            const mailtoSubject = encodeURIComponent(`${subject} - Message from ${name}`);
+            const mailtoBody = encodeURIComponent(`From: ${name} (${email})\n\n${message}`);
+
+            window.open(`mailto:horokhbohdandmytrovich@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`, '_blank');
+        });
+
+        const heroTitle = document.querySelector('.hero-title .name');
+        if (heroTitle) {
+            const text = 'Bohdan Horokh';
+            heroTitle.textContent = '';
+
+            setTimeout(() => {
+                let i = 0;
+                const typeInterval = setInterval(() => {
+                    heroTitle.textContent += text[i];
+                    i++;
+                    if (i >= text.length) {
+                        clearInterval(typeInterval);
+                    }
+                }, 100);
+            }, 1000);
+        }
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const shapes = document.querySelectorAll('.shape');
+
+            shapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.5;
+                if (shape instanceof HTMLElement) {
+                    shape.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
+                }
+            });
+        });
+
+        const skillBars = document.querySelectorAll('.skill-progress');
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.target instanceof HTMLElement) {
+                    entry.target.style.width = entry.target.style.getPropertyValue('--progress');
+                }
+            });
+        }, {threshold: 0.5});
+
+        skillBars.forEach(bar => {
+            if (bar instanceof HTMLElement) {
+                bar.style.width = '0%';
+                skillObserver.observe(bar);
+            }
+        });
+    </script>
 </Layout>
 
 <style>
-    main {
-        margin: auto;
-        padding: 1rem;
-        width: 800px;
-        max-width: calc(100% - 2rem);
-        color: white;
-        font-size: 20px;
-        line-height: 1.6;
+    /* Hero Section */
+    .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     }
 
-    .astro-a {
+    .hero-background {
         position: absolute;
-        top: -32px;
-        left: 50%;
-        transform: translatex(-50%);
-        width: 220px;
-        height: auto;
+        inset: 0;
         z-index: -1;
     }
 
-    h1 {
-        font-size: 4rem;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        margin-bottom: 1em;
-    }
-
-    .text-gradient {
-        background-image: var(--accent-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 400%;
-        background-position: 0%;
-    }
-
-    .instructions {
-        margin-bottom: 2rem;
-        border: 1px solid rgba(var(--accent-light), 25%);
-        background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-        padding: 1.5rem;
-        border-radius: 8px;
-    }
-
-    .instructions code {
-        font-size: 0.8em;
-        font-weight: bold;
-        background: rgba(var(--accent-light), 12%);
-        color: rgb(var(--accent-light));
-        border-radius: 4px;
-        padding: 0.3em 0.4em;
-    }
-
-    .instructions strong {
-        color: rgb(var(--accent-light));
-    }
-
-    .link-card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-        gap: 2rem;
-        padding: 0;
-    }
-
-    .list {
-        position: relative;
-    }
-
-    .list h2 {
-        color: #fff;
-        font-weight: 700;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-    }
-
-    .list ul {
-        position: relative;
-    }
-
-    .list ul li {
-        position: relative;
-        left: 0;
-        color: #fce4ec;
-        list-style: none;
-        margin: 4px 0;
-        border-left: 2px solid #f50057;
-        transition: 0.5s;
-        cursor: pointer;
-    }
-
-    .list ul li:hover {
-        left: 10px;
-    }
-
-    .list ul li span {
-        position: relative;
-        padding: 8px;
-        padding-left: 12px;
-        display: inline-block;
-        z-index: 1;
-        transition: 0.5s;
-    }
-
-    .list ul li:hover span {
-        color: #111;
-    }
-
-    .list ul li:before {
-        content: "";
+    .grid-overlay {
         position: absolute;
+        inset: 0;
+        background-image: linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+        background-size: 50px 50px;
+        animation: grid-move 20s linear infinite;
+    }
+
+    @keyframes grid-move {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(50px, 50px);
+        }
+    }
+
+    .floating-shapes {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+    }
+
+    .shape {
+        position: absolute;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        border-radius: 50%;
+        opacity: 0.1;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .shape-1 {
+        width: 100px;
+        height: 100px;
+        top: 20%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .shape-2 {
+        width: 150px;
+        height: 150px;
+        top: 60%;
+        right: 15%;
+        animation-delay: -2s;
+    }
+
+    .shape-3 {
+        width: 80px;
+        height: 80px;
+        top: 40%;
+        left: 70%;
+        animation-delay: -4s;
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-20px) rotate(180deg);
+        }
+    }
+
+    .hero .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-2xl);
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-xs);
+        padding: var(--space-xs) var(--space-sm);
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-xl);
+        font-size: 0.875rem;
+        margin-bottom: var(--space-md);
+        margin-top: var(--space-2xl);
+        font-weight: 500;
+    }
+
+    .status-indicator {
+        width: 8px;
+        height: 8px;
+        background: var(--success);
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: var(--space-md);
+    }
+
+    .hero-title .greeting {
+        display: block;
+        font-size: 0.6em;
+        color: var(--text-secondary);
+        font-weight: 400;
+    }
+
+    .hero-title .name {
+        display: block;
+        margin: var(--space-xs) 0;
+        min-height: 1.2em; /* Reserve space for the text */
+    }
+
+    .hero-title .title {
+        display: block;
+        font-size: 0.5em;
+        color: var(--text-secondary);
+        font-weight: 400;
+    }
+
+    .hero-description {
+        font-size: 1.125rem;
+        color: var(--text-secondary);
+        margin-bottom: var(--space-lg);
+        line-height: 1.7;
+    }
+
+    .hero-stats {
+        display: flex;
+        gap: var(--space-lg);
+        margin-bottom: var(--space-xl);
+    }
+
+    .stat {
+        text-align: center;
+    }
+
+    .stat-number {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary);
+        font-family: var(--font-mono);
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
+        color: var(--text-tertiary);
+    }
+
+    .hero-actions {
+        display: flex;
+        gap: var(--space-md);
+        flex-wrap: wrap;
+    }
+
+    .hero-visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .code-window {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: 0 20px 40px var(--shadow);
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .window-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--space-sm) var(--space-md);
+        background: var(--bg-tertiary);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .window-controls {
+        display: flex;
+        gap: var(--space-xs);
+    }
+
+    .control {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+
+    .control.close {
+        background: #ff5f57;
+    }
+
+    .control.minimize {
+        background: #ffbd2e;
+    }
+
+    .control.maximize {
+        background: #28ca42;
+    }
+
+    .window-title {
+        font-family: var(--font-mono);
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+
+    .code-content {
+        padding: var(--space-md);
+        font-family: var(--font-mono);
+        font-size: 0.875rem;
+        line-height: 1.6;
+        overflow-x: auto;
+    }
+
+    .code-annotation {
+        color: #bbb529;
+    }
+
+    .code-comment {
+        color: #6a9955;
+    }
+
+    .code-keyword {
+        color: #569cd6;
+    }
+
+    .code-class {
+        color: #4ec9b0;
+    }
+
+    .code-method {
+        color: #dcdcaa;
+    }
+
+    @media (max-width: 768px) {
+        .hero .container {
+            grid-template-columns: 1fr;
+            gap: var(--space-xl);
+        }
+
+        .hero-visual {
+            order: -1;
+        }
+
+        .hero-stats {
+            justify-content: center;
+        }
+    }
+
+    /* Section Styles */
+    .section {
+        padding: var(--space-2xl) 0;
+    }
+
+    .bg-highlight {
+        background: var(--bg-secondary);
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: var(--space-2xl);
+    }
+
+    .section-title {
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 700;
+        margin-bottom: var(--space-sm);
+        color: var(--text-primary);
+    }
+
+    .section-subtitle {
+        font-size: 1.125rem;
+        color: var(--text-secondary);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* About Section */
+    .about-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: var(--space-2xl);
+        align-items: start;
+    }
+
+    .about-text p {
+        margin-bottom: var(--space-md);
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    .achievements {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+        margin-top: var(--space-lg);
+    }
+
+    .achievement {
+        display: flex;
+        gap: var(--space-sm);
+        padding: var(--space-sm);
+        background: var(--bg-secondary);
+        border-radius: var(--radius-md);
+        border: 1px solid var(--border-color);
+        width: 100%;
+    }
+
+    .achievement-icon {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .achievement h4 {
+        margin-bottom: var(--space-xs);
+        color: var(--primary);
+    }
+
+    .achievement p {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+        margin: 0;
+    }
+
+    .about-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+    }
+
+    .image-container img {
         width: 100%;
         height: 100%;
-        background: #f50057;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: 0.5s;
+        object-fit: cover;
+        object-position: center;
     }
 
-    .list ul li:hover:before {
-        transform: scaleX(1);
+    .image-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: end;
+        padding: var(--space-md);
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    }
+
+    .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+    }
+
+    .tech {
+        padding: var(--space-xs) var(--space-sm);
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: var(--radius-sm);
+        font-size: 0.875rem;
+        color: white;
+        font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+        .about-content {
+            grid-template-columns: 1fr;
+            gap: var(--space-xl);
+        }
+
+        .achievements {
+            grid-column: 1 / -1;
+        }
+    }
+
+    /* UAProject Architecture Section */
+    .architecture-overview {
+        margin-bottom: var(--space-2xl);
+    }
+
+    .architecture-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-lg);
+        margin-bottom: var(--space-2xl);
+    }
+
+    .stat-card {
+        display: flex;
+        gap: var(--space-md);
+        padding: var(--space-lg);
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        transition: all var(--transition-normal);
+    }
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px var(--shadow);
+    }
+
+    .stat-icon {
+        font-size: 2rem;
+        flex-shrink: 0;
+    }
+
+    .stat-info h3 {
+        margin-bottom: var(--space-xs);
+        color: var(--primary);
+    }
+
+    .stat-info p {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+        margin: 0;
+    }
+
+    .architecture-diagram {
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: var(--space-xl);
+        margin-bottom: var(--space-2xl);
+    }
+
+    .architecture-diagram h3 {
+        text-align: center;
+        margin-bottom: var(--space-lg);
+        color: var(--text-primary);
+    }
+
+    .diagram {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+        align-items: center;
+    }
+
+    .diagram-layer {
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .diagram-layer h4 {
+        margin-bottom: var(--space-sm);
+        color: var(--primary);
+        font-size: 1.1rem;
+    }
+
+    .components {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-sm);
+        flex-wrap: wrap;
+    }
+
+    .component {
+        padding: var(--space-sm) var(--space-md);
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .component.highlight {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
+    }
+
+    .diagram-arrow {
+        font-size: 1.5rem;
+        color: var(--primary);
+        margin: var(--space-sm) 0;
+    }
+
+    .architecture-features h3 {
+        text-align: center;
+        margin-bottom: var(--space-lg);
+        color: var(--text-primary);
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--space-lg);
+    }
+
+    .feature {
+        padding: var(--space-lg);
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        transition: all var(--transition-normal);
+    }
+
+    .feature:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px var(--shadow);
+    }
+
+    .feature h4 {
+        margin-bottom: var(--space-sm);
+        color: var(--primary);
+        font-size: 1.1rem;
+    }
+
+    .feature p {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Projects Section */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: var(--space-xl);
+    }
+
+    .project-card {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        transition: all var(--transition-normal);
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px var(--shadow);
+    }
+
+    .project-image {
+        position: relative;
+        height: 200px;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        overflow: hidden;
+    }
+
+    .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .project-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity var(--transition-normal);
+    }
+
+    .project-card:hover .project-overlay {
+        opacity: 1;
+    }
+
+    .project-links {
+        display: flex;
+        gap: var(--space-md);
+    }
+
+    .project-link {
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary);
+        text-decoration: none;
+        transition: all var(--transition-fast);
+    }
+
+    .project-link:hover {
+        transform: scale(1.1);
+    }
+
+    .project-content {
+        padding: var(--space-lg);
+    }
+
+    .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: var(--space-sm);
+    }
+
+    .project-header h3 {
+        color: var(--text-primary);
+        margin: 0;
+    }
+
+    .project-status {
+        padding: var(--space-xs) var(--space-sm);
+        border-radius: var(--radius-sm);
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .project-status.active {
+        background: var(--success);
+        color: white;
+    }
+
+    .project-status:not(.active) {
+        background: var(--bg-tertiary);
+        color: var(--text-secondary);
+    }
+
+    .project-content p {
+        color: var(--text-secondary);
+        margin-bottom: var(--space-md);
+        line-height: 1.6;
+    }
+
+    .project-tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+    }
+
+    /* Skills Section */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: var(--space-xl);
+    }
+
+    .skill-category {
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: var(--space-xl);
+        text-align: center;
+        transition: all var(--transition-normal);
+    }
+
+    .skill-category:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px var(--shadow);
+    }
+
+    .skill-icon {
+        font-size: 3rem;
+        margin-bottom: var(--space-md);
+    }
+
+    .skill-category h3 {
+        margin-bottom: var(--space-lg);
+        color: var(--primary);
+    }
+
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .skill-item {
+        text-align: left;
+    }
+
+    .skill-name {
+        display: block;
+        margin-bottom: var(--space-xs);
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+
+    .skill-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--space-sm);
+        background: var(--bg-secondary);
+        border-radius: var(--radius-md);
+        border: 1px solid var(--border-color);
+    }
+
+    .skill-level {
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: var(--space-xs) var(--space-sm);
+        border-radius: var(--radius-sm);
+    }
+
+    .skill-level.expert {
+        background: var(--success);
+        color: white;
+    }
+
+    .skill-level.advanced {
+        background: var(--primary);
+        color: white;
+    }
+
+    .skill-level.beginner {
+        background: var(--primary-light);
+        color: white;
+    }
+
+    .skill-level.intermediate {
+        background: var(--accent);
+        color: white;
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-2xl);
+        align-items: start;
+    }
+
+    .contact-info h3 {
+        margin-bottom: var(--space-md);
+        color: var(--text-primary);
+    }
+
+    .contact-info p {
+        color: var(--text-secondary);
+        margin-bottom: var(--space-lg);
+        line-height: 1.7;
+    }
+
+    .contact-methods {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .contact-method {
+        display: flex;
+        gap: var(--space-md);
+        padding: var(--space-md);
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        text-decoration: none;
+        color: inherit;
+        transition: all var(--transition-fast);
+    }
+
+    .contact-method:hover {
+        background: var(--bg-tertiary);
+        transform: translateX(5px);
+    }
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        background: var(--primary);
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        flex-shrink: 0;
+    }
+
+    .contact-method h4 {
+        margin-bottom: var(--space-xs);
+        color: var(--text-primary);
+    }
+
+    .contact-method p {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .contact-form {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        padding: var(--space-xl);
+    }
+
+    .form-group {
+        margin-bottom: var(--space-md);
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: var(--space-xs);
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: var(--space-sm);
+        background: var(--bg-primary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        color: var(--text-primary);
+        font-family: inherit;
+        transition: all var(--transition-fast);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    @media (max-width: 768px) {
+        .contact-content {
+            grid-template-columns: 1fr;
+            gap: var(--space-xl);
+        }
+
+        .hero-stats {
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+        }
     }
 </style>
