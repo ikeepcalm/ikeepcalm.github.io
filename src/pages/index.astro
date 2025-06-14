@@ -126,7 +126,7 @@ const javaCodeHtml = `
                     </div>
                     <div class="about-image animate-on-scroll">
                         <div class="image-container">
-                            <img src="/img/who-is-it.jpg" alt="Bohdan Horokh" />
+                            <img src="/img/who-is-it.jpg" alt="Bohdan Horokh"/>
                             <div class="image-overlay">
                                 <div class="tech-stack">
                                     <span class="tech">Java</span>
@@ -282,7 +282,7 @@ const javaCodeHtml = `
                 <div class="projects-grid">
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="/img/uaproject.png" alt="UAProject" />
+                            <img src="/img/uaproject.png" alt="UAProject"/>
                             <div class="project-overlay">
                                 <div class="project-links">
                                     <a href="https://uaproject.xyz" target="_blank" class="project-link">
@@ -322,7 +322,7 @@ const javaCodeHtml = `
 
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="/img/lumios.gif" alt="Lumios Bot" />
+                            <img src="/img/lumios.gif" alt="Lumios Bot"/>
                             <div class="project-overlay">
                                 <div class="project-links">
                                     <a href="https://queue-ui.vercel.app/" target="_blank" class="project-link">
@@ -355,7 +355,7 @@ const javaCodeHtml = `
 
                     <div class="project-card animate-on-scroll">
                         <div class="project-image">
-                            <img src="/img/kpi.webp" alt="KPI" />
+                            <img src="/img/kpi.webp" alt="KPI"/>
                             <div class="project-overlay">
                                 <div class="project-links">
                                     <a href="https://github.com/ikeepcalm/kpi-programming-fundamentals" target="_blank"
@@ -587,7 +587,7 @@ const javaCodeHtml = `
         document.querySelector('#contact-form')?.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            const formData = new FormData(e.target);
+            const formData = new FormData(e.target as HTMLFormElement);
             const name = formData.get('name');
             const email = formData.get('email');
             const subject = formData.get('subject');
@@ -617,7 +617,7 @@ const javaCodeHtml = `
         }
 
         window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
+            const scrolled = window.scrollY;
             const shapes = document.querySelectorAll('.shape');
 
             shapes.forEach((shape, index) => {
