@@ -3,9 +3,9 @@ import Layout from '../layouts/Layout.astro';
 const javaCodeHtml = `
 <span class="code-annotation">@EnableAsync</span>
 <span class="code-annotation">@SpringBootApplication</span>
-<span class="code-keyword">public</span> <span class="code-keyword">class</span> <span class="code-class">UAProjectApplication</span> {
+<span class="code-keyword">public</span> <span class="code-keyword">class</span> <span class="code-class">SpringApplication</span> {
     <span class="code-keyword">public</span> <span class="code-keyword">static</span> <span class="code-keyword">void</span> <span class="code-method">main</span>(<span class="code-class">String</span>[] args) {
-        <span class="code-class">SpringApplication</span>.<span class="code-method">run</span>(<span class="code-class">UAProjectApplication</span>.<span class="code-keyword">class</span>, args);
+        <span class="code-class">SpringApplication</span>.<span class="code-method">run</span>(<span class="code-class">SpringApplication</span>.<span class="code-keyword">class</span>, args);
     }
 }`;
 ---
@@ -49,7 +49,7 @@ const javaCodeHtml = `
                         </div>
                         <div class="stat">
                             <span class="stat-number">100+</span>
-                            <span class="stat-label">Users Served</span>
+                            <span class="stat-label">Hours Debugged</span>
                         </div>
                     </div>
                     <div class="hero-actions">
@@ -109,12 +109,8 @@ const javaCodeHtml = `
                             University in Romania.
                         </p>
                         <p>
-                            Currently serving as <strong>Team Lead</strong> at UAProject, where I architect and maintain
-                            a complex
-                            distributed system serving thousands of Minecraft players. Our platform features custom Java
-                            plugins,
-                            FastAPI backend, Discord OAuth2 integration, and multi-server infrastructure with Velocity
-                            proxy.
+                            Previously served as <strong>Team Lead</strong> at UAProject (until August 2025), where I architected and maintained
+                            a complex distributed system that served hundreds of Minecraft players.
                         </p>
                         <p>
                             My expertise spans from <strong>Spring Framework</strong> enterprise applications to
@@ -166,106 +162,35 @@ const javaCodeHtml = `
             </div>
         </section>
 
-        <!-- UAProject Architecture Section -->
-        <section id="uaproject" class="section bg-highlight">
+        <!-- Work Experience Section -->
+        <section id="experience" class="section">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <h2 class="section-title">UAProject Architecture</h2>
-                    <p class="section-subtitle">Leading a complex distributed platform serving 100+ daily users</p>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="section-subtitle">Commercial roles and professional development</p>
                 </div>
-                <div class="architecture-overview animate-on-scroll">
-                    <div class="architecture-stats">
-                        <div class="stat-card">
-                            <div class="stat-icon">🚀</div>
-                            <div class="stat-info">
-                                <h3>Multi-Server Infrastructure</h3>
-                                <p>Velocity proxy managing main-heavy, lobby, and test servers</p>
+                <div class="experience-timeline animate-on-scroll">
+                    <div class="experience-item">
+                        <div class="experience-date">
+                            <span class="date-range">Aug 2025 - October 2025</span>
+                            <span class="date-duration">3 months</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h3>DevOps Engineer</h3>
+                                <div class="experience-company">
+                                    <span class="company-name">Zeroroleplay</span>
+                                    <span class="company-location">Italy (Remote)</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">⚡</div>
-                            <div class="stat-info">
-                                <h3>Async FastAPI Backend</h3>
-                                <p>SQLAlchemy ORM with Redis workers and webhook architecture</p>
+                            <p>Managed infrastructure, CI/CD pipelines, and deployment automation. Containerized solutions and automated deployment processes for Italian gaming company.</p>
+                            <div class="experience-tech">
+                                <span class="tech">Docker</span>
+                                <span class="tech">Linux</span>
+                                <span class="tech">CI/CD</span>
+                                <span class="tech">Infrastructure</span>
+                                <span class="tech">Automation</span>
                             </div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon">🔐</div>
-                            <div class="stat-info">
-                                <h3>Discord OAuth2 Integration</h3>
-                                <p>Seamless authentication and community management</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="architecture-diagram animate-on-scroll">
-                    <h3>System Architecture</h3>
-                    <div class="diagram">
-                        <div class="diagram-layer">
-                            <h4>Frontend Layer</h4>
-                            <div class="components">
-                                <div class="component">Next.js Website</div>
-                                <div class="component">Astro Docs</div>
-                                <div class="component">Discord Bot (Anaya)</div>
-                            </div>
-                        </div>
-                        <div class="diagram-arrow">↓</div>
-                        <div class="diagram-layer">
-                            <h4>API Layer</h4>
-                            <div class="components">
-                                <div class="component highlight">FastAPI Backend</div>
-                                <div class="component">REST API (/v2/docs)</div>
-                                <div class="component">Webhook System</div>
-                            </div>
-                        </div>
-                        <div class="diagram-arrow">↓</div>
-                        <div class="diagram-layer">
-                            <h4>Infrastructure Layer</h4>
-                            <div class="components">
-                                <div class="component">PostgreSQL Database</div>
-                                <div class="component">Redis Cache</div>
-                                <div class="component">ARQ Workers</div>
-                            </div>
-                        </div>
-                        <div class="diagram-arrow">↓</div>
-                        <div class="diagram-layer">
-                            <h4>Game Servers</h4>
-                            <div class="components">
-                                <div class="component">Velocity Proxy</div>
-                                <div class="component">Main Server (Purpur)</div>
-                                <div class="component">Custom Plugins</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="architecture-features animate-on-scroll">
-                    <h3>Key Technical Features</h3>
-                    <div class="features-grid">
-                        <div class="feature">
-                            <h4>🔌 Custom Plugin Ecosystem</h4>
-                            <p>CatWalk (Backend Bridge), Graylist (Access Control), CircleOfImagination (Magic
-                                System)</p>
-                        </div>
-                        <div class="feature">
-                            <h4>💳 Payment Integration</h4>
-                            <p>Donatello.to integration with automated transaction processing and Discord
-                                notifications</p>
-                        </div>
-                        <div class="feature">
-                            <h4>🛡️ Security & Auth</h4>
-                            <p>Discord OAuth2, verified action pathways, and graylist access control</p>
-                        </div>
-                        <div class="feature">
-                            <h4>📊 Real-time Events</h4>
-                            <p>Redis-powered webhook system for instant updates across all platform components</p>
-                        </div>
-                        <div class="feature">
-                            <h4>🐳 DevOps Pipeline</h4>
-                            <p>Docker containers, Portainer management, GitHub Actions CI/CD, and VPS deployment</p>
-                        </div>
-                        <div class="feature">
-                            <h4>📈 Scalable Architecture</h4>
-                            <p>Async processing, database optimization, caching strategies, and load balancing</p>
                         </div>
                     </div>
                 </div>
@@ -273,42 +198,27 @@ const javaCodeHtml = `
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section">
+        <section id="projects" class="section bg-highlight">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">Innovative solutions built with modern technologies</p>
+                    <h2 class="section-title">Personal Projects</h2>
+                    <p class="section-subtitle">Startup ventures and side projects</p>
                 </div>
-                <div class="projects-grid">
-                    <div class="project-card animate-on-scroll">
-                        <div class="project-image">
-                            <img src="/img/uaproject.png" alt="UAProject"/>
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://uaproject.net" target="_blank" class="project-link">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                             stroke="currentColor" stroke-width="2">
-                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                            <polyline points="15,3 21,3 21,9"/>
-                                            <line x1="10" y1="14" x2="21" y2="3"/>
-                                        </svg>
-                                    </a>
-                                    <a href="https://github.com/mc-uaproject" target="_blank" class="project-link">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                             stroke="currentColor" stroke-width="2">
-                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                <div class="projects-timeline animate-on-scroll">
+                    <div class="project-item">
+                        <div class="project-date">
+                            <span class="date-range">Jan 2023 - Aug 2025</span>
+                            <span class="date-duration">2.5 years</span>
                         </div>
                         <div class="project-content">
                             <div class="project-header">
                                 <h3>UAProject</h3>
-                                <span class="project-status active">Team Lead</span>
+                                <div class="project-type">
+                                    <span class="project-role">Team Lead & Founder</span>
+                                    <span class="project-nature">Startup Project</span>
+                                </div>
                             </div>
-                            <p>Complete Minecraft platform with custom plugins, FastAPI backend, Discord integration,
-                                and multi-server infrastructure serving 100+ daily users.</p>
+                            <p>Led development of a Minecraft platform startup with custom plugins, FastAPI backend, and Discord integration. Served thousands of players and managed distributed infrastructure until August 2025.</p>
                             <div class="project-tech">
                                 <span class="tech">Java</span>
                                 <span class="tech">Spring</span>
@@ -317,32 +227,39 @@ const javaCodeHtml = `
                                 <span class="tech">Redis</span>
                                 <span class="tech">Docker</span>
                             </div>
+                            <div class="project-links">
+                                <a href="https://uaproject.net" target="_blank" class="project-link-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Website
+                                </a>
+                                <a href="https://github.com/mc-uaproject" target="_blank" class="project-link-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="project-card animate-on-scroll">
-                        <div class="project-image">
-                            <img src="/img/lumios.gif" alt="Lumios Bot"/>
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://queue-ui.vercel.app/" target="_blank" class="project-link">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                             stroke="currentColor" stroke-width="2">
-                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                                            <polyline points="15,3 21,3 21,9"/>
-                                            <line x1="10" y1="14" x2="21" y2="3"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="project-item">
+                        <div class="project-date">
+                            <span class="date-range">Jun 2024 - Present</span>
+                            <span class="date-duration">Ongoing</span>
                         </div>
                         <div class="project-content">
                             <div class="project-header">
                                 <h3>Lumios Bot</h3>
-                                <span class="project-status active">Backend Developer</span>
+                                <div class="project-type">
+                                    <span class="project-role">Backend Developer</span>
+                                    <span class="project-nature">Personal Project</span>
+                                </div>
                             </div>
-                            <p>Complete study-life assistant with Telegram bot integration, featuring powerful backend,
-                                ORM data management, and secure API endpoints.</p>
+                            <p>Study-life assistant project with Telegram bot integration. Built comprehensive backend with ORM data management and secure API endpoints for student productivity and academic workflow automation.</p>
                             <div class="project-tech">
                                 <span class="tech">Java</span>
                                 <span class="tech">Spring Boot</span>
@@ -350,39 +267,49 @@ const javaCodeHtml = `
                                 <span class="tech">PostgreSQL</span>
                                 <span class="tech">RESTful API</span>
                             </div>
+                            <div class="project-links">
+                                <a href="https://queue-ui.vercel.app/" target="_blank" class="project-link-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                    Demo
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="project-card animate-on-scroll">
-                        <div class="project-image">
-                            <img src="/img/kpi.webp" alt="KPI"/>
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://github.com/ikeepcalm/kpi-programming-fundamentals" target="_blank"
-                                       class="project-link">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                             stroke="currentColor" stroke-width="2">
-                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="project-item">
+                        <div class="project-date">
+                            <span class="date-range">2022 - 2024</span>
+                            <span class="date-duration">University</span>
                         </div>
                         <div class="project-content">
                             <div class="project-header">
                                 <h3>Academic Projects</h3>
-                                <span class="project-status">University Work</span>
+                                <div class="project-type">
+                                    <span class="project-role">Student Developer</span>
+                                    <span class="project-nature">Educational</span>
+                                </div>
                             </div>
-                            <p>Collection of programming fundamentals, OOP concepts, algorithms, and data structures
-                                implementations in C, Java, and C#.</p>
+                            <p>Collection of programming fundamentals, OOP concepts, algorithms, and data structures implementations. Coursework projects demonstrating core computer science principles and software development skills.</p>
                             <div class="project-tech">
                                 <span class="tech">Java</span>
                                 <span class="tech">C#</span>
                                 <span class="tech">C</span>
                                 <span class="tech">HTML/CSS</span>
-                                <span class="tech">JS</span>
+                                <span class="tech">JavaScript</span>
                                 <span class="tech">Algorithms</span>
                                 <span class="tech">Data Structures</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ikeepcalm/" target="_blank" class="project-link-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                    </svg>
+                                    GitHub
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -397,88 +324,100 @@ const javaCodeHtml = `
                     <h2 class="section-title">Skills & Technologies</h2>
                     <p class="section-subtitle">Comprehensive expertise across the development stack</p>
                 </div>
-                <div class="skills-grid">
-                    <div class="skill-category animate-on-scroll">
+                <div class="skills-layout animate-on-scroll">
+                    <div class="skill-item">
                         <div class="skill-icon">☕</div>
-                        <h3>Backend Development</h3>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <span class="skill-name">Java & Spring Framework</span>
-                                <span class="skill-level expert">Expert (2+ years)</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">PostgreSQL & MariaDB</span>
-                                <span class="skill-level advanced">Advanced (2+ years)</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">RESTful APIs</span>
-                                <span class="skill-level expert">Advanced</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Python & Machine Learning</span>
-                                <span class="skill-level intermediate">Intermediate</span>
-                            </div>
+                        <div class="skill-content">
+                            <span class="skill-name">Java & Spring Framework</span>
+                            <span class="skill-context">Built enterprise applications & microservices</span>
                         </div>
                     </div>
 
-                    <div class="skill-category animate-on-scroll">
+                    <div class="skill-item">
+                        <div class="skill-icon">🗄️</div>
+                        <div class="skill-content">
+                            <span class="skill-name">PostgreSQL & MariaDB</span>
+                            <span class="skill-context">Database design & optimization</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">🔌</div>
+                        <div class="skill-content">
+                            <span class="skill-name">RESTful APIs</span>
+                            <span class="skill-context">Designed & documented production APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
                         <div class="skill-icon">🎮</div>
-                        <h3>Minecraft Development</h3>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <span class="skill-name">Paper API & Plugins</span>
-                                <span class="skill-level expert">Expert (3+ years)</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Networking & Packets</span>
-                                <span class="skill-level advanced">Advanced (2+ years)</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Velocity Proxy</span>
-                                <span class="skill-level advanced">Advanced</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Server Architecture</span>
-                                <span class="skill-level expert">Expert</span>
-                            </div>
+                        <div class="skill-content">
+                            <span class="skill-name">Minecraft Plugins</span>
+                            <span class="skill-context">Custom Paper API implementations</span>
                         </div>
                     </div>
 
-                    <div class="skill-category animate-on-scroll">
-                        <div class="skill-icon">🛠️</div>
-                        <h3>DevOps & Tools</h3>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <span class="skill-name">Docker & Containers</span>
-                                <span class="skill-level advanced">Advanced</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Linux Systems</span>
-                                <span class="skill-level intermediate">Intermediate</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Git & CI/CD</span>
-                                <span class="skill-level advanced">Advanced</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category animate-on-scroll">
+                    <div class="skill-item">
                         <div class="skill-icon">🌐</div>
-                        <h3>Frontend & Web</h3>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <span class="skill-name">JavaFX</span>
-                                <span class="skill-level intermediate">Intermediate</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">HTML/CSS/JavaScript</span>
-                                <span class="skill-level intermediate">Intermediate</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Astro Framework</span>
-                                <span class="skill-level beginner">Beginner+</span>
-                            </div>
+                        <div class="skill-content">
+                            <span class="skill-name">Network Protocols</span>
+                            <span class="skill-context">Packet manipulation & proxy systems</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">🏗️</div>
+                        <div class="skill-content">
+                            <span class="skill-name">Server Architecture</span>
+                            <span class="skill-context">Multi-server distributed platforms</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">🐳</div>
+                        <div class="skill-content">
+                            <span class="skill-name">Docker & Containerization</span>
+                            <span class="skill-context">Production deployments & orchestration</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">⚙️</div>
+                        <div class="skill-content">
+                            <span class="skill-name">CI/CD Pipelines</span>
+                            <span class="skill-context">GitHub Actions & automated testing</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">🐧</div>
+                        <div class="skill-content">
+                            <span class="skill-name">Linux Systems</span>
+                            <span class="skill-context">Server administration & monitoring</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">💻</div>
+                        <div class="skill-content">
+                            <span class="skill-name">Web Technologies</span>
+                            <span class="skill-context">HTML, CSS, JavaScript, Astro</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">🖥️</div>
+                        <div class="skill-content">
+                            <span class="skill-name">Desktop Applications</span>
+                            <span class="skill-context">JavaFX & GUI development</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-icon">🤖</div>
+                        <div class="skill-content">
+                            <span class="skill-name">Discord Integration</span>
+                            <span class="skill-context">OAuth2, bots & webhook systems</span>
                         </div>
                     </div>
                 </div>
@@ -1201,207 +1140,230 @@ const javaCodeHtml = `
         margin: 0;
     }
 
-    /* Projects Section */
-    .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: var(--space-xl);
+    /* Experience & Projects Timeline */
+    .experience-timeline,
+    .projects-timeline {
+        max-width: 900px;
+        margin: 0 auto;
     }
 
-    .project-card {
+    .experience-item,
+    .project-item {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: var(--space-xl);
+        margin-bottom: var(--space-2xl);
+        position: relative;
+    }
+
+    .experience-item:not(:last-child)::after,
+    .project-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 100px;
+        top: 80px;
+        bottom: -40px;
+        width: 2px;
+        background: var(--border-color);
+    }
+
+    .experience-date,
+    .project-date {
+        text-align: right;
+        padding-right: var(--space-lg);
+        position: relative;
+    }
+
+    .experience-date::after,
+    .project-date::after {
+        content: '';
+        position: absolute;
+        right: -9px;
+        top: 8px;
+        width: 16px;
+        height: 16px;
+        background: var(--primary);
+        border-radius: 50%;
+        border: 3px solid var(--bg-primary);
+    }
+
+    .date-range {
+        display: block;
+        font-weight: 600;
+        color: var(--text-primary);
+        font-size: 1rem;
+        margin-bottom: var(--space-xs);
+    }
+
+    .date-duration {
+        display: block;
+        font-size: 0.875rem;
+        color: var(--text-tertiary);
+        font-style: italic;
+    }
+
+    .experience-content,
+    .project-content {
         background: var(--bg-secondary);
         border: 1px solid var(--border-color);
         border-radius: var(--radius-lg);
-        overflow: hidden;
-        transition: all var(--transition-normal);
-    }
-
-    .project-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 25px 50px var(--shadow);
-    }
-
-    .project-image {
-        position: relative;
-        height: 200px;
-        background: linear-gradient(135deg, var(--primary), var(--secondary));
-        overflow: hidden;
-    }
-
-    .project-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .project-overlay {
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.7);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity var(--transition-normal);
-    }
-
-    .project-card:hover .project-overlay {
-        opacity: 1;
-    }
-
-    .project-links {
-        display: flex;
-        gap: var(--space-md);
-    }
-
-    .project-link {
-        width: 50px;
-        height: 50px;
-        background: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--primary);
-        text-decoration: none;
-        transition: all var(--transition-fast);
-    }
-
-    .project-link:hover {
-        transform: scale(1.1);
-    }
-
-    .project-content {
         padding: var(--space-lg);
+        position: relative;
     }
 
+    .experience-header,
     .project-header {
+        margin-bottom: var(--space-md);
+    }
+
+    .experience-header h3,
+    .project-header h3 {
+        color: var(--text-primary);
+        margin: 0 0 var(--space-xs) 0;
+        font-size: 1.25rem;
+    }
+
+    .experience-company,
+    .project-type {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: var(--space-sm);
+        flex-wrap: wrap;
+        gap: var(--space-sm);
     }
 
-    .project-header h3 {
-        color: var(--text-primary);
-        margin: 0;
-    }
-
-    .project-status {
-        padding: var(--space-xs) var(--space-sm);
-        border-radius: var(--radius-sm);
-        font-size: 0.75rem;
+    .company-name,
+    .project-role {
         font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
+        color: var(--primary);
     }
 
-    .project-status.active {
-        background: var(--success);
-        color: white;
+    .company-location,
+    .project-nature {
+        font-size: 0.875rem;
+        color: var(--text-tertiary);
+        font-style: italic;
     }
 
-    .project-status:not(.active) {
-        background: var(--bg-tertiary);
-        color: var(--text-secondary);
-    }
-
+    .experience-content p,
     .project-content p {
         color: var(--text-secondary);
-        margin-bottom: var(--space-md);
         line-height: 1.6;
+        margin-bottom: var(--space-md);
     }
 
+    .experience-tech,
     .project-tech {
         display: flex;
         flex-wrap: wrap;
         gap: var(--space-xs);
-    }
-
-    /* Skills Section */
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: var(--space-xl);
-    }
-
-    .skill-category {
-        background: var(--bg-primary);
-        border: 1px solid var(--border-color);
-        border-radius: var(--radius-lg);
-        padding: var(--space-xl);
-        text-align: center;
-        transition: all var(--transition-normal);
-    }
-
-    .skill-category:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 20px 40px var(--shadow);
-    }
-
-    .skill-icon {
-        font-size: 3rem;
         margin-bottom: var(--space-md);
     }
 
-    .skill-category h3 {
-        margin-bottom: var(--space-lg);
-        color: var(--primary);
+    .project-links {
+        display: flex;
+        gap: var(--space-sm);
+        flex-wrap: wrap;
     }
 
-    .skills-list {
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-md);
+    .project-link-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-xs);
+        padding: var(--space-xs) var(--space-sm);
+        background: var(--bg-tertiary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-sm);
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-size: 0.875rem;
+        transition: all var(--transition-fast);
+    }
+
+    .project-link-btn:hover {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+        .experience-item,
+        .project-item {
+            grid-template-columns: 1fr;
+            gap: var(--space-md);
+            margin-bottom: var(--space-xl);
+        }
+
+        .experience-date,
+        .project-date {
+            text-align: left;
+            padding-right: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: var(--space-sm);
+            margin-bottom: var(--space-sm);
+        }
+
+        .experience-date::after,
+        .project-date::after {
+            display: none;
+        }
+
+        .experience-item::after,
+        .project-item::after {
+            display: none;
+        }
+    }
+
+    /* Skills Section */
+    .skills-layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: var(--space-lg);
+        max-width: 1000px;
+        margin: 0 auto;
     }
 
     .skill-item {
-        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-md);
+        padding: var(--space-lg);
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        transition: all var(--transition-normal);
+    }
+
+    .skill-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px var(--shadow);
+        border-color: var(--primary);
+    }
+
+    .skill-icon {
+        font-size: 2rem;
+        flex-shrink: 0;
+        width: 40px;
+        text-align: center;
+    }
+
+    .skill-content {
+        flex: 1;
     }
 
     .skill-name {
         display: block;
-        margin-bottom: var(--space-xs);
-        font-weight: 500;
-        color: var(--text-primary);
-    }
-
-    .skill-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: var(--space-sm);
-        background: var(--bg-secondary);
-        border-radius: var(--radius-md);
-        border: 1px solid var(--border-color);
-    }
-
-    .skill-level {
-        font-size: 0.875rem;
         font-weight: 600;
-        padding: var(--space-xs) var(--space-sm);
-        border-radius: var(--radius-sm);
+        color: var(--text-primary);
+        margin-bottom: var(--space-xs);
+        font-size: 1.1rem;
     }
 
-    .skill-level.expert {
-        background: var(--success);
-        color: white;
-    }
-
-    .skill-level.advanced {
-        background: var(--primary);
-        color: white;
-    }
-
-    .skill-level.beginner {
-        background: var(--primary-light);
-        color: white;
-    }
-
-    .skill-level.intermediate {
-        background: var(--accent);
-        color: white;
+    .skill-context {
+        font-size: 0.875rem;
+        color: var(--text-tertiary);
+        font-style: italic;
+        line-height: 1.4;
     }
 
     .contact-content {
